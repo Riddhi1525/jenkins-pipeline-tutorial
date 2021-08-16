@@ -6,7 +6,7 @@ pipeline {
                 echo 'Run the static analysis to the code' 
             }
         }
-        stage('Compile') {
+        stage('Compile of products') {
             steps {
                 echo 'Compile the source code' 
             }
@@ -16,7 +16,7 @@ pipeline {
                 echo 'Run the security check against the application' 
             }
         }
-        stage('Run Unit Tests') {
+        stage('Run Unit Tests ok') {
             steps {
                 echo 'Run unit tests from the source code' 
             }
