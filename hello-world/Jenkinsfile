@@ -9,26 +9,31 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compile the source code' 
+                echo 'Compile my Jenkins file!'
             }
         }
         stage('Security Check') {
             steps {
                 echo 'Run the security check against the application' 
+                echo 'Check if the file is secure'
             }
         }
         stage('Run Unit Tests') {
             steps {
                 echo 'Run unit tests from the source code' 
+                echo 'If the file is secure run the unit tests from source code'
             }
         }
         stage('Run Integration Tests') {
             steps {
                 echo 'Run only crucial integration tests from the source code' 
+                echo'After running the unit tests run the crucial integration tests only' 
             }
         }
         stage('Publish Artifacts') {
             steps {
                 echo 'Save the assemblies generated from the compilation' 
+                echo 'As the compilation is done the code is successfully running'
             }
         }
     }
